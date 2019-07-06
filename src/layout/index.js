@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import {Layout, Menu, Icon} from 'antd';
 import Link from 'umi/link';
+import GlobalHeader from "./GlobalHeader";
 
 const {Header, Footer, Sider, Content} = Layout;
 
@@ -36,10 +37,18 @@ class BasicLayout extends Component {
                             <Menu.Item key="7"><Link to="css-modules-with-less">css-modules-with-less</Link></Menu.Item>
                             <Menu.Item key="8"><Link to="css-modules-with-antd">css-modules-with-antd</Link></Menu.Item>
                         </SubMenu>
+                        <Menu.Item key="9">
+                            <Link to="/locale">
+                                <Icon type="pie-chart"/>
+                                <span>locale</span>
+                            </Link>
+                        </Menu.Item>
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header style={{background: '#fff', textAlign: 'center', padding: 0}}>Header</Header>
+                    <Header style={{background: '#fff', textAlign: 'center', padding: 0}}>
+                        <GlobalHeader/>
+                    </Header>
                     <Content style={{margin: '24px 16px 0'}}>
                         <div style={{padding: 24, background: '#fff', minHeight: 360}}>
                             {/*设置的路由会通过替换children变量实现内容的切换*/}

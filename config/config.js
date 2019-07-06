@@ -3,7 +3,10 @@ export default {
     plugins: [
         ['umi-plugin-react', {
             antd: true,//umi将实现按需编译
-            dva: true//引入DVA
+            dva: true,//引入DVA
+            locale: {//打开国际化umi-plugin-locale插件
+                enable: true
+            }
         }],
     ],
     singular: true,//使用单数作为约定目录，如pages => page 存放页面代码文件
@@ -31,7 +34,8 @@ export default {
             {path: 'list', component: '../page/list'},
             {path: 'css-modules', component: 'css-modules'},
             {path: 'css-modules-with-less', component: 'css-modules-with-less'},
-            {path: 'css-modules-with-antd', component: 'css-modules-with-antd'}
+            {path: 'css-modules-with-antd', component: 'css-modules-with-antd'},
+            {path: 'locale', component: './locale'}
         ]
     }],
     proxy: {
