@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "umi dev",
-    "build": "umi build"
+    "build": "umi build",
+    "test": "umi test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "umi": "^2.8.8",
     "umi-plugin-react": "^1.9.7"
   },
