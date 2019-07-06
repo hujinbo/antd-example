@@ -43,6 +43,12 @@ class BasicLayout extends Component {
                                 <span>locale</span>
                             </Link>
                         </Menu.Item>
+                        <Menu.Item key="10">
+                            <Link to="/TypeScriptDemo">
+                                <Icon type="pie-chart"/>
+                                <span>TypeScriptDemo</span>
+                            </Link>
+                        </Menu.Item>
                     </Menu>
                 </Sider>
                 <Layout>

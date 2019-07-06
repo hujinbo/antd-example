@@ -35,7 +35,8 @@ export default {
             {path: 'css-modules', component: 'css-modules'},
             {path: 'css-modules-with-less', component: 'css-modules-with-less'},
             {path: 'css-modules-with-antd', component: 'css-modules-with-antd'},
-            {path: 'locale', component: './locale'}
+            {path: 'locale', component: './locale'},
+            {path: 'TypeScriptDemo', component: './TypeScriptDemo'}
         ]
     }],
     proxy: {
