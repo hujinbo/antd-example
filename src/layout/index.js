@@ -31,6 +31,11 @@ class BasicLayout extends Component {
                                 <span>Table&&Chart</span>
                             </Link>
                         </Menu.Item>
+                        <SubMenu key="sub2" title={<span><Icon type="dashboard"/><span>Custom Style</span></span>}>
+                            <Menu.Item key="6"><Link to="css-modules">css-modules</Link></Menu.Item>
+                            <Menu.Item key="7"><Link to="css-modules-with-less">css-modules-with-less</Link></Menu.Item>
+                            <Menu.Item key="8"><Link to="css-modules-with-antd">css-modules-with-antd</Link></Menu.Item>
+                        </SubMenu>
                     </Menu>
                 </Sider>
                 <Layout>

@@ -28,7 +28,10 @@ export default {
                 ]
             },
             {path: 'puzzlecards', component: './puzzlecards'},
-            {path: 'list', component: '../page/list'}
+            {path: 'list', component: '../page/list'},
+            {path: 'css-modules', component: 'css-modules'},
+            {path: 'css-modules-with-less', component: 'css-modules-with-less'},
+            {path: 'css-modules-with-antd', component: 'css-modules-with-antd'}
         ]
     }],
     proxy: {
@@ -36,6 +39,9 @@ export default {
             target: 'https://08ad1pao69.execute-api.us-east-1.amazonaws.com',
             changeOrigin: true,
         }
+    },
+    theme: {//更换antd主题，通过修改less变量（modifyVars）实现
+        "@primary-color": "#0566b7",
     }
 }
 ;
